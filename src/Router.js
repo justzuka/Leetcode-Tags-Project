@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
 	createBrowserRouter,
-	createRoutesFromElements,
-	Route,
 	RouterProvider,
-	Link,
 	Navigate,
 } from "react-router-dom";
 import "./index.css";

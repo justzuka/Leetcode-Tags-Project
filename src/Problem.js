@@ -11,7 +11,7 @@ function Problem({ content, title, difficulty, title_slug }) {
 
 	useEffect(() => {
 		setCssDifficulty(("problem-" + difficulty).toLowerCase());
-	}, [content]);
+	}, [content, difficulty]);
 
 	const handleLinkClick = () => {
 		// Open the other site in a new window

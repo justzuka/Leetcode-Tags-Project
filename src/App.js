@@ -74,15 +74,6 @@ function App() {
 	const navigate = useNavigate();
 	const [seenSet, setSeenSet] = useState(new Set());
 
-	const addItemToSet = (item) => {
-		const updatedSet = new Set(seenSet);
-		updatedSet.add(item);
-		setSeenSet(updatedSet);
-
-		// Store the updated Set in localStorage
-		localStorage.setItem("mySet", JSON.stringify(Array.from(updatedSet)));
-	};
-
 	const nextProblem = () => {
 		const updatedSet = new Set(seenSet);
 		updatedSet.add(problemInfo[problemIndex]["titleSlug"]);
@@ -116,16 +107,16 @@ function App() {
 		switch (difficulty) {
 			case "easy":
 				return problems_file_easy;
-				break;
+
 			case "medium":
 				return problems_file_medium;
-				break;
+
 			case "hard":
 				return problems_file_hard;
-				break;
+
 			case "random":
 				return problems_file_random;
-				break;
+
 			default:
 				navigate("/");
 				break;

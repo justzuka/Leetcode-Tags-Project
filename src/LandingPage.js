@@ -1,16 +1,9 @@
-import React, { useEffect, useState } from "react";
-import {
-	createBrowserRouter,
-	createRoutesFromElements,
-	Route,
-	RouterProvider,
-	Link,
-} from "react-router-dom";
+import React from "react";
 import "./LandingPage.css";
 import "./index.css";
 import DifficultyButton from "./DifficultyButton";
 
-function LandingPage({}) {
+function LandingPage() {
 	return (
 		<div className="LandingPage-container">
 			<div className="typewriter">
