@@ -139,7 +139,7 @@ function App() {
 		if (storedSet) {
 			setSeenSet(new Set(JSON.parse(storedSet)));
 		}
-
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 		fetch(handleDifficulty())
 			.then((response) => response.json())
 			.then((data) => {
