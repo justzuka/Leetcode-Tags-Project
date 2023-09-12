@@ -1,0 +1,61 @@
+.DifficultyButton-container {
+	width: 250px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: rgba(100, 100, 111, 0.071) 0px 7px 29px 0px;
+	border-radius: 10px;
+	margin: 20px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.75rem;
+	text-transform: capitalize;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.DifficultyButton-container.problem-easy {
+	color: #00af9b;
+}
+
+.DifficultyButton-container.problem-medium {
+	color: #ffb800;
+}
+
+.DifficultyButton-container.problem-hard {
+	color: #ff2d55;
+}
+
+.DifficultyButton-container.problem-random {
+	color: black;
+}
+
+.DifficultyButton-container.problem-easy:hover {
+	background-color: #00af9b;
+	color: white;
+	transform: scale(1.1);
+}
+
+.DifficultyButton-container.problem-medium:hover {
+	background-color: #ffb800;
+	color: white;
+	transform: scale(1.1);
+}
+
+.DifficultyButton-container.problem-hard:hover {
+	background-color: #ff2d55;
+	color: white;
+	transform: scale(1.1);
+}
+
+.DifficultyButton-container.problem-random:hover {
+	background-color: black;
+	color: white;
+	transform: scale(1.1);
+}
+
+.LandingPage-buttons {
+	display: flex;
+	flex-direction: row;
+}

@@ -1,0 +1,149 @@
+code {
+	background: #f4f4f4;
+	border: 1px solid #ddd;
+	color: #666;
+	font-family: monospace;
+	font-size: 15px;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	border-radius: 5px;
+	overflow: auto;
+	padding: 2px 5px;
+	/* display: block; */
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	white-space: normal;
+	max-width: 100%;
+	overflow: auto;
+	max-width: 100%;
+}
+
+pre {
+	border-left: 3px solid #00000014;
+
+	border-left-width: 2px;
+	color: #00000067;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	padding-left: 1rem;
+	white-space: pre-wrap;
+	font-weight: 500;
+}
+.problem-container-holder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 600px;
+	height: 95vh;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: transparent;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.problem-container {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	height: 100%;
+	background-color: white;
+	border-radius: 10px;
+
+	padding-left: 30px;
+	padding-right: 10px;
+	overflow: hidden;
+	overflow-y: scroll;
+	height: 95vh;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+strong {
+	color: black;
+}
+
+.problem-container::-webkit-scrollbar {
+	width: 10px;
+}
+.problem-container::-webkit-scrollbar-track {
+	/* background-color: rgb(218, 218, 218); */
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+.problem-container::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0 0 6px rgb(209, 209, 209);
+	margin: 10px;
+}
+
+.problem-title {
+	font-weight: 500;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	margin-top: 10px;
+}
+
+.problem-difficulty {
+	line-height: 22px;
+	font-weight: 500;
+	font-size: 0.875rem;
+}
+
+.problem-easy {
+	color: #00af9b;
+}
+
+.problem-medium {
+	color: #ffb800;
+}
+
+.problem-hard {
+	color: #ff2d55;
+}
+
+.problem-difficulty-link-holder {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.problem-link {
+	display: inline-block;
+	padding: 2px 4px;
+	line-height: 18px;
+	font-size: 10px;
+	font-weight: 500;
+	background-color: #00af9b;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	width: fit-content;
+	margin: 10px;
+}
+
+.problem-link:hover {
+	background-color: #008e7d;
+	transform: scale(1.1);
+}
+
+.problem-link.clicked {
+	transform: scale(0.9);
+	background-color: #005a50;
+}
