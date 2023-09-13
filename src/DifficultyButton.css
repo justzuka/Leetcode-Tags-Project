@@ -1,6 +1,6 @@
 .DifficultyButton-container {
-	width: 250px;
-	height: 300px;
+	width: 20%;
+	height: 50vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
