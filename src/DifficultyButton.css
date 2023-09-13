@@ -28,7 +28,7 @@
 }
 
 .DifficultyButton-container.problem-random {
-	color: black;
+	color: #4e4280;
 }
 
 .DifficultyButton-container.problem-easy:hover {
@@ -50,7 +50,7 @@
 }
 
 .DifficultyButton-container.problem-random:hover {
-	background-color: black;
+	background-color: #4e4280;
 	color: white;
 	transform: scale(1.1);
 }
